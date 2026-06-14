@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-    <title>Buat Kamu yang Paling Spesial 💖</title>
+    <title>Buat Calon Istriku yang Paling Spesial 💖</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
@@ -297,7 +297,9 @@
         // Jeda 2.5 detik sebelum diarahkan ke WhatsApp
         setTimeout(() => {
           const nomorTujuan = "6283892716161"; // Ganti dengan nomor WA
-          const pesan = "Haii ganteng! Aku cuma mau bilang kalau aku SAYAAANGG banget sama kamu!!! Lebih dari yang kamu tau awww 🤍🤍🤍",;
+          const pesan = encodeURIComponent(
+            "Haii ganteng! Aku cuma mau bilang kalau aku SAYAAANGG banget sama kamu!!! Lebih dari yang kamu tau awww \u{1F90D}\u{1F90D}\u{1F90D}",
+          );
           const linkWa = `https://wa.me/${nomorTujuan}?text=${pesan}`;
           window.location.href = linkWa;
         }, 2500);
